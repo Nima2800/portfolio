@@ -731,6 +731,7 @@ select option,
 .badge--gray {
   background-color: #dddde1;
   color: #44566C;
+  margin-bottom: 0.1rem;
 }
 .badge--dark {
   background-color: #44566C;
