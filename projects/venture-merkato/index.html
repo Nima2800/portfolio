@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>طراحی سایت Venture Merkato | نیما اکبرنژاد</title>
+    <meta
+      name="description"
+      content="جزئیات طراحی و پیاده‌سازی سایت Venture Merkato؛ پلتفرم انگلیسی‌زبان ایده‌های استارتاپی، تحلیل فرصت‌های بازار و فناوری‌های نوظهور."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Nima Akbarnezhad" />
+    <meta name="theme-color" content="#2c98f0" />
+    <link rel="canonical" href="https://nimalog.ir/projects/venture-merkato/" />
+    <link rel="preload" as="font" href="../../assets/fonts/IRY.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="image" href="../../assets/portfolio_image/site/vench.webp" />
+    <style>
+      @font-face {
+        font-family: IRY;
+        src: url("../../assets/fonts/IRY.woff2") format("woff2");
+        font-display: swap;
+      }
+      :root {
+        --blue: #2c98f0;
+        --blue-dark: #1675c1;
+        --ink: #202632;
+        --muted: #667085;
+        --line: #e7edf4;
+        --card: #ffffff;
+        --soft: #f5f8fc;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 10% 0%, rgba(44, 152, 240, .12), transparent 28rem),
+          linear-gradient(180deg, #f8fbff 0%, #eef4f9 100%);
+        font-family: IRY, Tahoma, Arial, sans-serif;
+        line-height: 1.9;
+      }
+      a { color: inherit; }
+      img { display: block; max-width: 100%; }
+      .page {
+        width: min(1120px, calc(100% - 32px));
+        margin: 32px auto;
+      }
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        color: var(--blue-dark);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .hero, .section {
+        background: rgba(255,255,255,.96);
+        border: 1px solid rgba(221,231,241,.9);
+        border-radius: 28px;
+        box-shadow: 0 18px 50px rgba(34, 61, 89, .08);
+      }
+      .hero {
+        overflow: hidden;
+      }
+      .hero__content {
+        padding: clamp(28px, 5vw, 58px);
+      }
+      .eyebrow {
+        display: inline-flex;
+        padding: 5px 12px;
+        border-radius: 999px;
+        color: var(--blue-dark);
+        background: #eaf5ff;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: .04em;
+      }
+      h1 {
+        margin: 18px 0 12px;
+        font-size: clamp(32px, 5vw, 58px);
+        line-height: 1.25;
+      }
+      .lead {
+        max-width: 850px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(16px, 2vw, 19px);
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 26px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 10px 20px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 800;
+      }
+      .btn--primary {
+        color: #fff;
+        background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+        box-shadow: 0 12px 24px rgba(44, 152, 240, .25);
+      }
+      .btn--secondary {
+        color: var(--blue-dark);
+        background: #edf7ff;
+      }
+      .preview {
+        padding: 0 clamp(18px, 4vw, 46px) clamp(22px, 5vw, 48px);
+      }
+      .laptop {
+        position: relative;
+        max-width: 940px;
+        margin: 0 auto;
+      }
+      .laptop__shell {
+        position: relative;
+        padding: 12px;
+        border: 1px solid #252b34;
+        border-radius: 20px 20px 10px 10px;
+        background: #151a21;
+        box-shadow: 0 30px 70px rgba(17, 30, 45, .22);
+      }
+      .laptop__camera {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #53606f;
+        transform: translateX(-50%);
+      }
+      .laptop__screen {
+        max-height: 560px;
+        overflow: auto;
+        border-radius: 10px;
+        background: #fff;
+      }
+      .laptop__screen img { width: 100%; height: auto; }
+      .laptop__base {
+        display: block;
+        width: 108%;
+        height: 16px;
+        margin-right: -4%;
+        border-radius: 3px 3px 18px 18px;
+        background: linear-gradient(180deg, #dce3eb, #9faab6);
+        box-shadow: 0 10px 18px rgba(17, 30, 45, .16);
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.55fr .85fr;
+        gap: 22px;
+        margin-top: 22px;
+      }
+      .section { padding: clamp(24px, 4vw, 40px); }
+      .section h2 { margin: 0 0 14px; font-size: 25px; }
+      .section p { margin: 0; color: var(--muted); }
+      .feature-list {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .feature-list li {
+        position: relative;
+        padding: 14px 48px 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--soft);
+      }
+      .feature-list li::before {
+        content: "✓";
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        display: grid;
+        width: 25px;
+        height: 25px;
+        place-items: center;
+        border-radius: 50%;
+        color: #fff;
+        background: var(--blue);
+        font-size: 14px;
+        font-weight: 900;
+      }
+      .stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+      .stack span {
+        padding: 7px 12px;
+        border: 1px solid #d8e9f8;
+        border-radius: 999px;
+        color: #176cae;
+        background: #eef8ff;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .meta {
+        display: grid;
+        gap: 12px;
+      }
+      .meta__item {
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--line);
+      }
+      .meta__item:last-child { border-bottom: 0; padding-bottom: 0; }
+      .meta__label {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .meta__value { font-weight: 800; }
+      footer {
+        padding: 26px 0 6px;
+        color: var(--muted);
+        text-align: center;
+        font-size: 14px;
+      }
+      @media (max-width: 820px) {
+        .page { margin-top: 18px; }
+        .content-grid { grid-template-columns: 1fr; }
+        .hero, .section { border-radius: 21px; }
+        .laptop__screen { max-height: 420px; }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "طراحی سایت Venture Merkato",
+        "url": "https://nimalog.ir/projects/venture-merkato/",
+        "image": "https://nimalog.ir/assets/portfolio_image/site/vench.webp",
+        "creator": {
+          "@type": "Person",
+          "name": "نیما اکبرنژاد",
+          "url": "https://nimalog.ir/"
+        },
+        "about": [
+          "Startup intelligence",
+          "Startup ideas",
+          "Emerging technology",
+          "Market insights"
+        ],
+        "inLanguage": "fa-IR"
+      }
+    </script>
+  </head>
+  <body>
+    <main class="page">
+      <a class="back" href="../../">← بازگشت به صفحه اصلی</a>
+
+      <article class="hero">
+        <div class="hero__content">
+          <span class="eyebrow">Startup Intelligence Platform</span>
+          <h1>طراحی سایت Venture Merkato</h1>
+          <p class="lead">
+            Venture Merkato یک وب‌سایت محتوایی انگلیسی‌زبان برای کشف ایده‌های
+            استارتاپی، بررسی فرصت‌های نوظهور بازار و ارائه بینش‌های کاربردی به
+            بنیان‌گذاران، سازندگان محصول و علاقه‌مندان فناوری است. در طراحی این
+            پروژه، هدف اصلی تبدیل حجم بالای محتوا و موضوعات تخصصی به تجربه‌ای
+            منظم، خوانا و قابل جست‌وجو بود.
+          </p>
+          <div class="actions">
+            <a
+              class="btn btn--primary"
+              href="https://venturemerkato.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >مشاهده سایت اصلی</a
+            >
+            <a class="btn btn--secondary" href="#details">جزئیات پروژه</a>
+          </div>
+        </div>
+
+        <div class="preview">
+          <div class="laptop">
+            <div class="laptop__shell">
+              <span class="laptop__camera"></span>
+              <div class="laptop__screen">
+                <img
+                  src="../../assets/portfolio_image/site/vench.webp"
+                  alt="نمای کامل سایت Venture Merkato"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <span class="laptop__base"></span>
+          </div>
+        </div>
+      </article>
+
+      <div class="content-grid" id="details">
+        <section class="section">
+          <h2>شرح پروژه</h2>
+          <p>
+            ساختار سایت به‌صورت یک مجله تخصصی و پویا طراحی شده تا مطالب تازه،
+            ایده‌های منتخب و موضوعات پرتقاضا در همان نگاه اول قابل تشخیص باشند.
+            صفحه اصلی با یک پیام روشن درباره ارزش محصول آغاز می‌شود و سپس از
+            کارت‌های محتوایی، بخش مطالب ترند، آخرین نوشته‌ها و مسیرهای موضوعی
+            برای هدایت کاربر استفاده می‌کند. تنوع بالای حوزه‌ها، از هوش مصنوعی
+            و SaaS تا فین‌تک، سلامت، انرژی پاک، کشاورزی، امنیت سایبری و تجارت
+            آنلاین، نیازمند معماری اطلاعات دقیق و دسته‌بندی قابل توسعه بود.
+          </p>
+        </section>
+
+        <aside class="section">
+          <h2>اطلاعات پروژه</h2>
+          <div class="meta">
+            <div class="meta__item">
+              <span class="meta__label">نوع وب‌سایت</span>
+              <span class="meta__value">مجله فناوری و ایده‌های استارتاپی</span>
+            </div>
+            <div class="meta__item">
+              <span class="meta__label">زبان</span>
+              <span class="meta__value">انگلیسی</span>
+            </div>
+            <div class="meta__item">
+              <span class="meta__label">مخاطبان</span>
+              <span class="meta__value">بنیان‌گذاران، سازندگان و سرمایه‌گذاران</span>
+            </div>
+            <div class="meta__item">
+              <span class="meta__label">سال اجرا</span>
+              <span class="meta__value">1405</span>
+            </div>
+          </div>
+        </aside>
+
+        <section class="section">
+          <h2>جزئیات اجرا</h2>
+          <ul class="feature-list">
+            <li>
+              طراحی صفحه اصلی مجله‌ای با معرفی ارزش سایت، شاخص‌های کلیدی و
+              دسترسی سریع به تازه‌ترین فرصت‌های استارتاپی
+            </li>
+            <li>
+              ایجاد بخش Trending Now برای برجسته‌سازی مطالب مهم و موضوعات دارای
+              شتاب بازار
+            </li>
+            <li>
+              طراحی کارت‌های مقاله با تصویر، عنوان، خلاصه، تاریخ انتشار و
+              دسته‌بندی برای اسکن سریع محتوا
+            </li>
+            <li>
+              معماری دسته‌بندی گسترده و قابل توسعه برای حوزه‌های فناوری،
+              کسب‌وکار و صنایع مختلف
+            </li>
+            <li>
+              پیاده‌سازی جست‌وجو، آرشیو زمانی و مسیرهای موضوعی برای دسترسی سریع
+              به محتوای قدیمی و تخصصی
+            </li>
+            <li>
+              بهینه‌سازی چیدمان برای مطالعه طولانی، نمایش ریسپانسیو و مدیریت
+              محتوای مستمر
+            </li>
+            <li>
+              توجه به سئوی پایه، ساختار عنوان‌ها، متادیتا و لینک‌سازی داخلی
+              مقالات
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>تکنولوژی‌ها و مهارت‌ها</h2>
+          <div class="stack">
+            <span>WordPress</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>UI / UX</span>
+            <span>Content Architecture</span>
+            <span>Magazine Layout</span>
+            <span>SEO Basics</span>
+          </div>
+        </section>
+      </div>
+
+      <footer>نیما اکبرنژاد — طراحی و توسعه وب</footer>
+    </main>
+  </body>
+</html>
