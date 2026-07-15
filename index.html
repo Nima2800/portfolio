@@ -89,6 +89,15 @@
       rel="preload"
     />
     <link href="assets/styles/main.min.css" rel="stylesheet" />
+    <style>
+      .contacts-block__item a[aria-label^="تلگرام"] {
+        align-items: center;
+        display: inline-flex;
+      }
+      .telegram-icon {
+        filter: none;
+      }
+    </style>
     <script type="application/ld+json">
       [
         {
@@ -141,6 +150,7 @@
       ]
     </script>
   </head>
+  <body>
     <div class="preloader">
       <div class="preloader__wrap">
         <div class="circle-pulse">
@@ -223,8 +233,23 @@
                       <a
                         href="https://t.me/nima280"
                         rel="me noopener noreferrer"
-                        ><span aria-hidden="true" class="mini-icon">✈</span>
-                        Nima280</a
+                        aria-label="تلگرام نیما اکبرنژاد"
+                        ><svg
+                          aria-hidden="true"
+                          class="telegram-icon"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="display:inline-block;vertical-align:middle;margin-left:8px;flex:0 0 auto"
+                        >
+                          <circle cx="12" cy="12" r="12" fill="#229ED9"></circle>
+                          <path
+                            d="M18.54 6.77 16.7 17.12c-.14.73-.51.91-1.03.57l-2.8-2.06-1.35 1.3c-.15.15-.28.28-.57.28l.2-2.85 5.19-4.69c.23-.2-.05-.31-.35-.11l-6.42 4.04-2.76-.86c-.6-.19-.61-.6.13-.89l10.79-4.16c.5-.18.94.12.81 1.08Z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                        <span>Telegram</span></a
                       >
                     </li>
                   </ul>
@@ -427,6 +452,19 @@
                       <div class="timeline">
                         <article class="timeline__item">
                           <h5 class="title title--h5 timeline__title">
+                            طراحی سایت Venture Merkato
+                          </h5>
+                          <span class="timeline__period">1405</span>
+                          <p class="timeline__description">
+                            طراحی و پیاده‌سازی وب‌سایت محتوایی انگلیسی‌زبان
+                            Venture Merkato برای انتشار ایده‌های استارتاپی،
+                            تحلیل فرصت‌های بازار و معرفی فناوری‌های نوظهور؛ با
+                            تمرکز بر معماری محتوای گسترده، دسته‌بندی تخصصی،
+                            مطالب ترند، جست‌وجو و تجربه مطالعه سریع و منظم.
+                          </p>
+                        </article>
+                        <article class="timeline__item">
+                          <h5 class="title title--h5 timeline__title">
                             طراحی سایت سورین اطلس
                           </h5>
                           <span class="timeline__period">1405</span>
@@ -567,6 +605,49 @@
                 <span class="section-kicker">Recent websites</span>
                 <h2 class="title title--h3">وب‌سایت‌های اخیر</h2>
                 <div class="website-showcase-grid">
+                  <article class="website-showcase-card">
+                    <div class="website-showcase-card__content">
+                      <span class="website-showcase-card__kicker"
+                        >Startup Intelligence Platform</span
+                      >
+                      <h3>سایت Venture Merkato</h3>
+                      <p>
+                        پلتفرم محتوایی انگلیسی برای ایده‌های استارتاپی، تحلیل
+                        فرصت‌های بازار و فناوری‌های نوظهور؛ با ساختار مجله‌ای،
+                        دسته‌بندی‌های تخصصی، مطالب ترند و مسیر سریع دسترسی به
+                        محتوای تازه.
+                      </p>
+                    </div>
+                    <a
+                      aria-label="مشاهده سایت Venture Merkato"
+                      class="laptop-preview auto-laptop-scroll"
+                      href="https://venturemerkato.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><div class="laptop-preview__shell">
+                        <span class="laptop-preview__camera"></span>
+                        <div class="laptop-preview__screen">
+                          <img
+                            alt="نمونه طراحی سایت Venture Merkato توسط نیما اکبرنژاد"
+                            decoding="async"
+                            loading="lazy"
+                            src="assets/portfolio_image/site/vench.webp"
+                          />
+                        </div>
+                      </div>
+                      <span class="laptop-preview__base"></span></a
+                    ><a
+                      class="website-showcase-link"
+                      href="projects/venture-merkato/"
+                      ><span>مطالعه جزئیات پروژه</span></a
+                    ><a
+                      class="website-showcase-link"
+                      href="https://venturemerkato.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><span>مشاهده سایت</span></a
+                    >
+                  </article>
                   <article class="website-showcase-card">
                     <div class="website-showcase-card__content">
                       <span class="website-showcase-card__kicker"
@@ -1012,6 +1093,32 @@
                     </figcaption>
                   </figure>
                 
+                  <figure class="gallery-grid__item category-site">
+                    <a
+                      href="https://venturemerkato.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="مشاهده سایت Venture Merkato"
+                    >
+                      <div class="gallery-grid__image-wrap">
+                        <img
+                          alt="طراحی سایت Venture Merkato؛ پلتفرم ایده‌های استارتاپی و فناوری‌های نوظهور"
+                          class="gallery-grid__image cover lazyload"
+                          data-zoom=""
+                          decoding="async"
+                          loading="lazy"
+                          src="assets/portfolio_image/site/vench.webp"
+                        />
+                      </div>
+                    </a>
+                    <figcaption class="gallery-grid__caption">
+                      <h4 class="title gallery-grid__title">
+                        سایت Venture Merkato
+                      </h4>
+                      <span class="gallery-grid__category">سایت</span>
+                    </figcaption>
+                  </figure>
+
                   <figure class="gallery-grid__item category-site">
                     <div class="gallery-grid__image-wrap">
                       <video
