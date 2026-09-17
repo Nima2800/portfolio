@@ -97,6 +97,97 @@
       .telegram-icon {
         filter: none;
       }
+      .website-showcase-card--sodma {
+        position: relative;
+        isolation: isolate;
+        overflow: visible;
+        border-color: rgba(37, 99, 235, 0.10);
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow:
+          0 18px 45px rgba(15, 23, 42, 0.07),
+          0 0 28px 6px rgba(232, 185, 60, 0.14),
+          0 0 54px 12px rgba(232, 185, 60, 0.08);
+      }
+      .website-showcase-card--sodma::before {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        border-radius: inherit;
+        background: transparent;
+        box-shadow:
+          0 0 26px 10px rgba(246, 204, 83, 0.18),
+          0 0 58px 18px rgba(246, 204, 83, 0.08);
+        pointer-events: none;
+        z-index: -1;
+      }
+      .website-showcase-card--sodma::after {
+        content: none;
+      }
+      .website-showcase-card--sodma .website-showcase-card__kicker {
+        color: #9b6a12;
+        font-weight: 800;
+      }
+      .sodma-gold-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-right: 0.45rem;
+        padding: 0.2rem 0.55rem;
+        border: 1px solid rgba(191, 145, 42, 0.24);
+        border-radius: 999px;
+        color: #8f6418;
+        background: rgba(239, 217, 145, 0.24);
+        font-size: 0.68rem;
+        font-weight: 900;
+        vertical-align: middle;
+      }
+      .sodma-gold-badge::before {
+        content: "";
+        width: 0.42rem;
+        height: 0.42rem;
+        border-radius: 50%;
+        background: #c99a37;
+        box-shadow: 0 0 0 3px rgba(201, 154, 55, 0.14);
+      }
+      .gymbash-lime-badge {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0.45rem;
+        padding: 0.2rem 0.55rem;
+        border: 1px solid rgba(130, 180, 20, 0.22);
+        border-radius: 999px;
+        color: #527400;
+        background: rgba(190, 245, 45, 0.18);
+        font-size: 0.68rem;
+        font-weight: 900;
+        vertical-align: middle;
+      }
+      .bale-tarakonesh-badge {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0.45rem;
+        padding: 0.2rem 0.55rem;
+        border: 1px solid rgba(29, 178, 151, 0.24);
+        border-radius: 999px;
+        color: #0f7565;
+        background: rgba(26, 204, 175, 0.14);
+        font-size: 0.68rem;
+        font-weight: 900;
+        vertical-align: middle;
+      }
+      .aldataset-api-badge {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0.45rem;
+        padding: 0.2rem 0.55rem;
+        border: 1px solid rgba(73, 170, 135, 0.22);
+        border-radius: 999px;
+        color: #2f765e;
+        background: rgba(126, 220, 185, 0.16);
+        font-size: 0.68rem;
+        font-weight: 900;
+        vertical-align: middle;
+      }
     </style>
     <script type="application/ld+json">
       [
@@ -462,6 +553,54 @@
                       <div class="timeline">
                         <article class="timeline__item">
                           <h5 class="title title--h5 timeline__title">
+                            طراحی پلتفرم سودما
+                          </h5>
+                          <span class="timeline__period">1405</span>
+                          <p class="timeline__description">
+                            طراحی و پیاده‌سازی پلتفرم سودما به‌عنوان سامانه هوشمند
+                            سرمایه‌گذاری با تمرکز بر نمایش پیشنهادهای خرید و فروش،
+                            قیمت‌های لحظه‌ای بازار، مدیریت پرتفو، گزارش عملکرد و
+                            توسعه پنل‌های اختصاصی کاربر و مدیریت با رابط کاربری
+                            مدرن و داده‌محور.
+                          </p>
+                        </article>
+                        <article class="timeline__item">
+                          <h5 class="title title--h5 timeline__title">
+                            طراحی پلتفرم GymBash
+                          </h5>
+                          <span class="timeline__period">1405</span>
+                          <p class="timeline__description">
+                            طراحی و پیاده‌سازی پلتفرم تناسب‌اندام GymBash با تمرکز بر
+                            برنامه‌های تمرینی، پایش بدن، رژیم غذایی، گزارش ماهانه و
+                            داشبورد اختصاصی برای مدیریت مسیر پیشرفت ورزشکاران.
+                          </p>
+                        </article>
+                        <article class="timeline__item">
+                          <h5 class="title title--h5 timeline__title">
+                            طراحی افزونه بله تراکنش
+                          </h5>
+                          <span class="timeline__period">1405</span>
+                          <p class="timeline__description">
+                            طراحی و توسعه افزونه وردپرسی بله تراکنش برای پرداخت
+                            ووکامرس در بله (مینی‌اپ بله) با تمرکز بر پرداخت مستقیم،
+                            بازگشت امن به سایت، پنل تنظیمات اختصاصی و تجربه کاربری
+                            ساده برای فروشگاه‌های آنلاین.
+                          </p>
+                        </article>
+                        <article class="timeline__item">
+                          <h5 class="title title--h5 timeline__title">
+                            توسعه وب سرویس آلومینیوم دیتاست
+                          </h5>
+                          <span class="timeline__period">1405</span>
+                          <p class="timeline__description">
+                            طراحی و توسعه API آلومینیوم دیتاست برای ارائه داده‌های
+                            به‌روز دلار، طلا و سکه، بورس ایران و رمزارزها؛ همراه با
+                            مدیریت کلیدهای API، پلن‌های اشتراک، محدودیت مصرف، پنل
+                            مدیریتی و مستندات اتصال برای محصولات مختلف.
+                          </p>
+                        </article>
+                        <article class="timeline__item">
+                          <h5 class="title title--h5 timeline__title">
                             طراحی سایت Venture Merkato
                           </h5>
                           <span class="timeline__period">1405</span>
@@ -612,9 +751,181 @@
                 </div>
               </div>
               <section class="website-showcase-section" id="recent_websites">
-                <span class="section-kicker">Recent websites</span>
-                <h2 class="title title--h3">وب‌سایت‌های اخیر</h2>
+                <span class="section-kicker">Recent projects</span>
+                <h2 class="title title--h3">پروژه‌های اخیر</h2>
                 <div class="website-showcase-grid">
+                  <article class="website-showcase-card website-showcase-card--sodma">
+                    <div class="website-showcase-card__content">
+                      <span class="website-showcase-card__kicker"
+                        >Smart Investment Platform</span
+                      >
+                      <h3>
+                        سایت سودما
+                        <span class="sodma-gold-badge">SODMA.IR</span>
+                      </h3>
+                      <p>
+                        پلتفرم هوشمند سرمایه‌گذاری با پیشنهادهای خرید و فروش،
+                        قیمت‌های لحظه‌ای بازار، مدیریت پرتفو، گزارش عملکرد و
+                        پنل‌های اختصاصی کاربر و مدیریت.
+                      </p>
+                    </div>
+                    <a
+                      aria-label="مشاهده سایت سودما"
+                      class="laptop-preview auto-laptop-scroll"
+                      href="https://sodma.ir/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><div class="laptop-preview__shell">
+                        <span class="laptop-preview__camera"></span>
+                        <div class="laptop-preview__screen">
+                          <img
+                            alt="نمونه طراحی پلتفرم هوشمند سرمایه‌گذاری سودما توسط نیما اکبرنژاد"
+                            decoding="async"
+                            height="2047"
+                            loading="lazy"
+                            src="assets/portfolio_image/site/sodma-home.webp"
+                            width="263"
+                          />
+                        </div>
+                      </div>
+                      <span class="laptop-preview__base"></span></a
+                    ><a class="website-showcase-link" href="projects/sodma/"
+                      ><span>مطالعه جزئیات پروژه</span></a
+                    ><a
+                      class="website-showcase-link"
+                      href="https://sodma.ir/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><span>مشاهده سایت</span></a
+                    >
+                  </article>
+                  <article class="website-showcase-card">
+                    <div class="website-showcase-card__content">
+                      <span class="website-showcase-card__kicker">Fitness Platform</span>
+                      <h3>
+                        سایت GymBash
+                        <span class="gymbash-lime-badge">GYMBASH.IR</span>
+                      </h3>
+                      <p>
+                        پلتفرم برنامه‌ریزی تمرینی و تناسب‌اندام با برنامه‌های حرفه‌ای،
+                        پایش بدن، رژیم غذایی، گزارش‌های ماهانه و داشبورد اختصاصی ورزشکار.
+                      </p>
+                    </div>
+                    <a
+                      aria-label="مشاهده سایت GymBash"
+                      class="laptop-preview auto-laptop-scroll"
+                      href="https://gymbash.ir/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><div class="laptop-preview__shell">
+                        <span class="laptop-preview__camera"></span>
+                        <div class="laptop-preview__screen">
+                          <img
+                            alt="نمونه طراحی سایت و پلتفرم تناسب‌اندام GymBash توسط نیما اکبرنژاد"
+                            decoding="async"
+                            height="2048"
+                            loading="lazy"
+                            src="assets/portfolio_image/site/gymbash-landing.webp"
+                            width="434"
+                          />
+                        </div>
+                      </div>
+                      <span class="laptop-preview__base"></span></a
+                    ><a class="website-showcase-link" href="projects/gymbash/"
+                      ><span>مطالعه جزئیات پروژه</span></a
+                    ><a
+                      class="website-showcase-link"
+                      href="https://gymbash.ir/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><span>مشاهده سایت</span></a
+                    >
+                  </article>
+                  <article class="website-showcase-card">
+                    <div class="website-showcase-card__content">
+                      <span class="website-showcase-card__kicker">WooCommerce Plugin</span>
+                      <h3>
+                        افزونه بله تراکنش
+                        <span class="bale-tarakonesh-badge">RTL-THEME</span>
+                      </h3>
+                      <p>
+                        افزونه پرداخت ووکامرس در بله (مینی‌اپ بله) با اتصال مستقیم،
+                        بازگشت امن به سایت، پنل تنظیمات اختصاصی و فرآیند پرداخت ساده
+                        برای فروشگاه‌های آنلاین.
+                      </p>
+                    </div>
+                    <a
+                      aria-label="مشاهده صفحه افزونه بله تراکنش"
+                      class="laptop-preview auto-laptop-scroll"
+                      href="https://www.rtl-theme.com/baletarakonesh-wordpress-plugin/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><div class="laptop-preview__shell">
+                        <span class="laptop-preview__camera"></span>
+                        <div class="laptop-preview__screen">
+                          <img
+                            alt="نمونه طراحی افزونه بله تراکنش توسط نیما اکبرنژاد"
+                            decoding="async"
+                            height="2048"
+                            loading="lazy"
+                            src="assets/portfolio_image/site/baletarakonesh-landing.webp"
+                            width="321"
+                          />
+                        </div>
+                      </div>
+                      <span class="laptop-preview__base"></span></a
+                    ><a class="website-showcase-link" href="projects/bale-tarakonesh/"
+                      ><span>مطالعه جزئیات پروژه</span></a
+                    ><a
+                      class="website-showcase-link"
+                      href="https://www.rtl-theme.com/baletarakonesh-wordpress-plugin/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><span>مشاهده در راست‌چین</span></a
+                    >
+                  </article>
+                  <article class="website-showcase-card">
+                    <div class="website-showcase-card__content">
+                      <span class="website-showcase-card__kicker">Market Data API</span>
+                      <h3>
+                        API آلومینیوم دیتاست
+                        <span class="aldataset-api-badge">API.ALDATASET.COM</span>
+                      </h3>
+                      <p>
+                        وب‌سرویس داده‌های بازار برای دلار، طلا و سکه، بورس ایران و
+                        رمزارزها با API Key، پلن‌های مصرف، مستندات اتصال و پنل مدیریت.
+                      </p>
+                    </div>
+                    <a
+                      aria-label="مشاهده وب سرویس آلومینیوم دیتاست"
+                      class="laptop-preview auto-laptop-scroll"
+                      href="https://api.aldataset.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><div class="laptop-preview__shell">
+                        <span class="laptop-preview__camera"></span>
+                        <div class="laptop-preview__screen">
+                          <img
+                            alt="نمونه طراحی وب سرویس API آلومینیوم دیتاست توسط نیما اکبرنژاد"
+                            decoding="async"
+                            height="2048"
+                            loading="lazy"
+                            src="assets/portfolio_image/site/aldataset-api-landing.webp"
+                            width="426"
+                          />
+                        </div>
+                      </div>
+                      <span class="laptop-preview__base"></span></a
+                    ><a class="website-showcase-link" href="projects/aldataset-api/"
+                      ><span>مطالعه جزئیات پروژه</span></a
+                    ><a
+                      class="website-showcase-link"
+                      href="https://api.aldataset.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><span>مشاهده وب سرویس</span></a
+                    >
+                  </article>
                   <article class="website-showcase-card">
                     <div class="website-showcase-card__content">
                       <span class="website-showcase-card__kicker"
